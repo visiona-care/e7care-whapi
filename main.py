@@ -7,7 +7,11 @@ import base64
 from PIL import Image
 from evolutionapi.models.message import ButtonMessage, Button
 
-app = FastAPI()
+app = FastAPI(
+    title="Vador Whapi",
+    description="API para enviar mensajes de texto e imágenes a través de Evolution",
+    version="0.1.0"
+)
 
 # Configuración inicial del cliente Evolution
 evolution_client = EvolutionClient(
