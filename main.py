@@ -10,7 +10,7 @@ from evolutionapi.models.message import ButtonMessage, Button
 app = FastAPI(
     title="Vador Whapi",
     description="API para enviar mensajes de texto e imágenes a través de Evolution",
-    version="0.1.0"
+    version="0.1.1"
 )
 
 # Configuración inicial del cliente Evolution
